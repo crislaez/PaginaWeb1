@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>HTML & CSS</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="paginaweb.css">
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<link rel="stylesheet" type="text/css" href="banner.css">
+		<link rel="stylesheet" type="text/css" href="blog.css">
+		<link rel="stylesheet" type="text/css" href="info.css">
+		<link rel="stylesheet" type="text/css" href="Pestilos.css">
+		<link rel="stylesheet" href="css/fontello.css">
+		
+	</head>
+	
+	<body>
+	 <header>
+	   <div class="contenedor">
+		   <h1 class="icon-html5">HTML & CSS</h1>
+		 
+	   </div>
+	   
+	 </header>
+	 
+	 <main>
+		<section id="banner">
+			<img src="sombras-CSS.jpg" alt="banner">
+			<!--<h1>Pagina web Responsive</h2>-->
+			<div class="contenedor"> 
+
+			</div>
+		</section>
+		
+		<section id="Bienvenidos">
+			<h2>Estilos</h2>
+			<p>Aqui haremos un breve resumen de todas las entregas que hemos tenido que hacer esta segunda
+				evaluacion, y los estilos que hemos tenido que hacer.
+				</p>
+		</section>
+		
+		<section id="blog">
+		    <div class="contenedor">
+				<h2 id="cabecerados">Formulario en HTML</h2>
+				<p id="cuerpo">Los formularios permiten a los desarrolladores de páginas web poner elementos interactivos en 
+				sus páginas, por ejemplo, para recibir mensajes de sus lectores, de forma similar a las cartas de respuestas
+				que se encuentra en algunas revistas. El lector escribe la información rellenando campos o haciendo clic
+				sobre botones, y luego presiona un botón de envío para enviarla a una dirección URL que se suele dirigir a 
+				una dirección de correo electrónico o a un script dinámico Web como PHP, ASP o CGI.
+				</p>
+				<h2 id="cabecerados">Formulario en HTML 5</h2>
+				<p id="cuerpo">Los elementos y atributos para formularios en HTML5 proveen un mayor grado de marcado semántico
+				que en HTML4 y eliminan gran parte del tedioso trabajo de programar y diseñar que se necesitaba en HTML4. 
+				Las funcionalidades de los formularios en HTML5 brindan una experiencia mejor para los usuarios al permitir
+				que los formularios tengan un comportamiento más consistente entre diferentes sitios web y al darle una 
+				devolución inmediata acerca de la información ingresada.
+				</p>
+				<h2 id="cabecerados">Fuente</h2>
+				<p id="cuerpo">La página web www.fontsquirrel.com es una maravilla por muchas razones: vamos a 
+				encontrar fuentes 100% libres de uso comercial, vamos a poder descargarlas, instalarlas, utilizarlas,
+				… pero además viene que con algunas opciones que la hacen única. Por ejemplo el Font Identifier soluciona
+				el dolor de cabeza que tenemos cuando se nos plantea la pregunta… ¿what the f***ont es la que aparece en
+				esta imagen? Sólo arrastrando una imagen con la fuente en particular nos dará una serie de aproximaciones
+				muy buenas. Lo que nos interesa aquí es la parte de WebFont Generator: una herramienta para convertir
+				nuestras fuentes a código web para utilizar directamente. Para añadir nuestra fuente, que también podemos
+				haber descargado previamente de la misma web, pinchamos en “Upload Fonts”, la subimos y marcamos la casilla
+				de aceptación en la que declaras que tienes los permisos necesarios para utilizarla y pulsar en “Download
+				your kit”. Te descargarás un archivo .zip. (Tip: ¿quieres encontrar buenas fuentes que van bien juntan? Nodo 
+				Común te lo pone fácil en esta entrada). Para utilizar la fuente necesitarás los archivos de fuente más
+				el .css. Además si pinchas en el demo.html creado podrás ver cómo instalarla con instrucciones en inglés 
+				y un ejemplo de toda la fuente.Los 4 archivos de la fuente tendrás que subirlos a tu servidor, el css 
+				contiene el código que tendrás que añadir a tu web para que todo funcione correctamente. Ya estás listo 
+				para subir los archivos a tu servidor. Para hacerlo necesitas acceder al panel de control de tu hosting 
+				o tener alguna herramienta para acceder por ftp.Te recomiendo que crees una carpeta en la raíz de tu sitio
+				y que la llames “fuentes”. Ahí subirás los archivos de extensión de tipografía. Ahora necesitas decirle a tu
+				web qué tipografías tiene que mostrar y dónde puede encontrarlas. Eso lo haces con el código que encontrarás 
+				en el archivo css que descargaste junto con las fuentes.Si abres el css verás este 
+						texto:@font-face {
+						font-family: ‘kollektifregular’;
+						src: url(‘kollektif-webfont.woff2’) format(‘woff2’),
+						url(‘kollektif-webfont.woff’) format(‘woff’);
+						font-weight: normal;
+						font-style: normal;}
+				Ese código presupone que vas a ubicar las tipografías en el directorio raíz de tu web pero te recomiendo que
+			   las coloques en la carpeta “fuentes”, tal como se explica anteriormente. Te ayudará a mantener todo más ordenado.
+			   Por tanto tienes que hacer una pequeña modificación en el código. De forma que quede así:
+				@font-face {
+				font-family: ‘kollektifregular’;
+				src: url(‘https://tuweb.co/fuentes/kollektif-webfont.woff2′) format(‘woff2’),
+				url(‘https://tuweb.co/fuentes/kollektif-webfont.woff’) format(‘woff’);
+				font-weight: normal;
+				font-style: normal;
+				}
+
+				Lo que hemos hecho ha sido añadir la ruta dónde se encuentra la tipografía para que tu web la busque en el sitio adecuado, y con eso ya tienes el código listo para insertarlo en tu web.
+							
+				</p>
+				<h2 id="cabecerados">Instrucciones</h2>
+				<p id="cuerpo">Agregar JavaScript directamente a un archivo HTML
+				La primera forma de insertar JavaScript en HTML es directa. Puedes hacerlo utilizando la etiqueta <script> </script>
+				 que debe envolver todo el código JS que escribas. Se puede agregar el código JS:
+				 entre las etiquetas <head>
+				entre las etiquetas <body>
+				Dependiendo de dónde agregues el código JavaScript en tu archivo HTML, la carga será diferente. Por lo general se
+				 recomienda agregarlo en la sección <head> para que permanezca separado del contenido de tu archivo HTML. 
+				 Pero colocarlo dentro de <body> puede ayudar a mejorar la velocidad de carga, ya que el contenido del sitio
+				 web se cargará más rápido, y solo después de eso se procesará el JavaScript.
+				</p>
+				<h2 id="cabecerados">Cuntrubuir</h2>
+				<p id="cuerpo">Si tienes una cuenta de Google y deseas implementar un formulario de Contacto en tu web o
+				tienda online y necesitas que los registros de tu formulario se puedan guardar en un excel o simplemente 
+				se te notifique cuando alguien ha rellenado el formulario, Google Form es la herramienta que te facilita 
+				esta tarea. A continuación te explicamos un sencillo tutorial de cómo lo puedes hacer en tu tienda o web 
+				de Comandia. 1.Primero que nada es necesario que tengas una cuenta de Google creada, si no lo tuvieras puedes 
+				darte de alta aquí: https://accounts.google.com/SignUp?hl=es
+				2. Si ya tienes la cuenta creada podemos directamente ingresar en https://www.google.es/intl/es/forms/about/ e 
+				iniciar sesión en “Ir a Formularios de Google”
+				3.Una vez hemos iniciado sesión, se nos presentan 4 tipos de formularios:
+
+				En blanco (podemos crear un formulario desde cero)
+				Datos de contacto (es el que utilizaremos en este ejemplo)
+				Confirmación de asistencia a un evento
+				Invitación a una fiesta
+				4.Elegimos la opción de “Datos de contacto”, y nos creará un formulario simple con campos ya creados (Nombre, Correo electrónico,
+				Dirección, Teléfono y Comentarios).
+
+				5.Si queremos editar algún campo sólo basta con hacer clic directamente en él y nos mostrará los ajustes que
+				 podemos hacerle. Por ejemplo, podríamos indicar que el “Número de teléfono” sea obligatorio, para ello activamos el switch “obligatorio” que en la 
+				 imagen aparece desactivado. De esta manera nuestros usuarios tendrán que rellenar obligatoriamente este campo.
+				 También podemos eliminar campos o copiar uno ya hecho y editar su nombre. Más adelante crearemos Formularios más complejos.
+
+				6. Una vez tengamos nuestro formulario a nuestro gusto, podemos previsualizarlo en cualquier
+				7. Ahora necesitamos incrustar nuestro formulario en nuestra web/tienda. Para ello vamos a “Enviar”
+
+				Elegimos “< >” que nos mostrará el código que debemos copiar, antes podemos editar el tamaño del formulario 
+				de su ancho y alto en píxeles.Copiamos el código que nos aparece por debajo de “Insertar HTML” y lo pegamos en nuestra página estática seleccionando “Código fuente” de nuestro editor.
+
+
+
+
+				 </p>
+					<h2 id="cabecerados">Map</h2>
+				<p id="cuerpo">En primer lugar hemos de obtener la url de la imagen que funcionará como link, para ello la subimos a un alojamiento de imágenes o al propio Blogger.
+				Una vez obtenida la url de nuestra imagen, la colocamos en este sencillo código, donde dice URL_DE_IMAGEN y en el mismo código, colocamos la página que queremos linkar, es decir, 
+				la dirección web que se abrirá al pinchar sobre la imagen, en URL_DE_WEB.
+				</p>
+					<h2 id="cabecerados">Sprite</h2>
+				<p id="cuerpo">Nos hemos bajado una imagen de un tutorial de animaciones con sprites, <a href="https://ebweb.es/crear-programar-usar-sprites-generadores/"> Crear y usar sprites.
+				Generadores de sprites para tu web.</a> Luego seria ir provando con los width: y con los height: asta que se vayan asomando
+				</p>
+
+			</div>
+		</section>	
+		
+		<section id="info">
+			
+			<div class="contenedor">
+
+				
+			</div>
+		</section>
+	 
+	 </main>
+	 
+	 <footer>
+		<div class="contenedor">
+			<p class="copy">HTML & CSS &copy; 2019</p>
+			<div class="sociales">
+			<a class="icon-facebook" href=""></a>
+			<a class="icon-twitter-circled" href=""></a>
+			<a class="icon-instagram" href=""></a>
+			</div>
+		</div>
+	 </footer>
+
+    
+
+        
+	</body>
+</html>

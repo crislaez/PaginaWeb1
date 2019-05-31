@@ -1,0 +1,17 @@
+#cabecerados{
+    border-bottom:1px solid black;
+}
+
+#cuerpo:hover{
+      background-color:#E2F1FF;
+}
+#cuerpo{
+	background-color:beige;
+    border:2px solid dodgerblue;
+    border-radius:5px;
+    padding:10px;
+}
+#cabecerados{
+	color:white;
+	text-shadow: 2px 1px black;
+}

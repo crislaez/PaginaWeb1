@@ -1,0 +1,36 @@
+#info{
+	background-color:dodgerblue;
+	color:#fff;
+	text-align:center;
+	padding: 20px;
+	margin: 1px;
+	text-shadow: 2px 1px black;
+
+}
+#info .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.info-pet{
+	margin:20px;
+	
+}
+.info-pet img{
+	width: 180px;
+	height:180px;
+	border-radius:50%;
+	border:7px solid beige;
+}
+
+@media screen and (min-width: 480px){
+	.info-pet {
+		width: 40%px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.info-pet {
+		width: auto;
+	}
+}

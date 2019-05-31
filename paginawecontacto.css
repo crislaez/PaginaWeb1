@@ -1,0 +1,27 @@
+body{
+   
+   background-color:dodgerblue;
+   font-family: Open Sans;
+   padding:20px
+
+}
+
+fieldset{
+    background-color:beige;
+    padding:40px;
+    font-size: 25px;
+    border:2px solid blue;
+    border-radius:20px;
+}
+label{
+   font-size: 20px;
+    margin-right: 50px;
+   
+
+ 
+}
+
+fieldset:hover{
+
+      background-color:#E2F1FF;
+}
